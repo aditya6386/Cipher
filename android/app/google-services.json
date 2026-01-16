@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476626016703",
+    "project_id": "chat-app-24dca",
+    "storage_bucket": "chat-app-24dca.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476626016703:android:ed31e1715efa9623aee90a",
+        "android_client_info": {
+          "package_name": "com.example.youtube_messenger_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMdePKGv4-jG1GhW06eTC_YcSzZ1rmoxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

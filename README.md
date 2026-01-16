@@ -1,10 +1,4 @@
-🔥 Create a Professional Chat App in Flutter - Step-by-Step Tutorial! 🔥
-
-
-<img src="https://github.com/user-attachments/assets/da30aa6f-d424-4157-b952-ab179cbaed16">
-
-
-Welcome to the repository for the **Fully Functional Chat App in Flutter** tutorial! In this repository, you'll find all the code to build an advanced, real-time chat application using Flutter, Firebase, Cubit, and GetIt for dependency injection. This app features several cool functionalities, including user authentication, real-time messaging, online status, last seen, and more!
+Welcome to the repository for the **Fully Functional Chat App in Flutter** In this repository, you'll find all the code to build an advanced, real-time chat application using Flutter, Firebase, Cubit, and GetIt for dependency injection. This app features several cool functionalities, including user authentication, real-time messaging, online status, last seen, and more!
 
 ## 💬 Key Features
 
@@ -28,5 +22,3 @@ Welcome to the repository for the **Fully Functional Chat App in Flutter** tutor
 👉 Voice/Video Calling
 👉 File Sharing (Images, Videos, Audios)
 👉 Advanced Features for an even better chat experience.
-
-By the end of this video, you'll have a feature-packed chat app ready for production, plus the knowledge to build scalable apps using the best Flutter practices! 💻

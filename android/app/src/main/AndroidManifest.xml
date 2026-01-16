@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="youtube_messenger_app"
+        android:label="Cipher"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

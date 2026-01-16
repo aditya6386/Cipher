@@ -23,18 +23,37 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late AppLifeCycleObserver _lifeCycleObserver;
+  AppLifeCycleObserver? _lifeCycleObserver;
 
   @override
   void initState() {
+    super.initState();
     getIt<AuthCubit>().stream.listen((state) {
       if (state.status == AuthStatus.authenticated && state.user != null) {
+        // Remove old observer if exists
+        if (_lifeCycleObserver != null) {
+          WidgetsBinding.instance.removeObserver(_lifeCycleObserver!);
+        }
+        // Create and add new observer
         _lifeCycleObserver = AppLifeCycleObserver(
             userId: state.user!.uid, chatRepository: getIt<ChatRepository>());
+        WidgetsBinding.instance.addObserver(_lifeCycleObserver!);
+      } else {
+        // Remove observer when user logs out
+        if (_lifeCycleObserver != null) {
+          WidgetsBinding.instance.removeObserver(_lifeCycleObserver!);
+          _lifeCycleObserver = null;
+        }
       }
-      WidgetsBinding.instance.addObserver(_lifeCycleObserver);
     });
-    super.initState();
+  }
+
+  @override
+  void dispose() {
+    if (_lifeCycleObserver != null) {
+      WidgetsBinding.instance.removeObserver(_lifeCycleObserver!);
+    }
+    super.dispose();
   }
 
   @override

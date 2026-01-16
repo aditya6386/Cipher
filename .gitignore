@@ -50,3 +50,6 @@ app.*.map.json
 # macOS
 **/macos/Podfile.lock
 **/macos/Pods/
+
+# Documentation (local only)
+PROJECT_OVERVIEW_AND_INTERVIEW_QUESTIONS.md
